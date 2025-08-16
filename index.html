@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Ahura — Personal Programming Site</title>
+  <meta name="description" content="Ahura's personal programming portfolio and playground." />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <header>
+      <div class="brand">
+        <div class="logo">A</div>
+        <div>
+          <div style="font-weight:700">Ahura</div>
+          <div class="small">Student · Programmer · Enthusiast</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div>
+        <div class="card">
+          <h1>Hello — I'm <span id="namePlace">Ahura</span></h1>
+          <p class="lead">I build small projects, learn web technologies, and love experimenting. This is a clean, single-file starter site you can edit and host anywhere.</p>
+          <div class="actions">
+            <a class="btn" href="#projects">See Projects</a>
+            <a class="btn" href="#contact" style="margin-left:8px; background:transparent; border:1px solid rgba(255,255,255,0.06)">Contact</a>
+          </div>
+        </div>
+
+        <div id="projects" class="card" style="margin-top:16px">
+          <h2 style="margin-top:0">Projects</h2>
+          <div class="projects">
+            <div class="proj">
+              <strong>Project: To-Do</strong>
+              <div class="small">Simple tasks list with localStorage</div>
+            </div>
+            <div class="proj">
+              <strong>Project: Fetch Demo</strong>
+              <div class="small">Learn how to call APIs and show results</div>
+            </div>
+            <div class="proj">
+              <strong>Project: Playground</strong>
+              <div class="small">Tiny utilities and experiments</div>
+            </div>
+          </div>
+
+          <hr style="margin:12px 0; border:none; border-top:1px solid rgba(255,255,255,0.03)">
+          <div>
+            <div class="small">Try it: enter a heading and add a new &lt;h1&gt; below (demonstrates DOM creation)</div>
+            <div style="display:flex; gap:8px; margin-top:8px">
+              <input id="headingInput" type="text" placeholder="New heading text" />
+              <button id="addH1" class="btn">Add H1</button>
+            </div>
+            <div id="demoContainer" style="margin-top:12px"></div>
+          </div>
+        </div>
+      </div>
+
+      <aside>
+        <div class="card" id="about">
+          <h3 style="margin-top:0">About</h3>
+          <p class="small">Hi — I'm Ahura, a high-school student learning programming. I enjoy JavaScript, small web apps, and improving my skills every day.</p>
+          <hr style="margin:12px 0; border:none; border-top:1px solid rgba(255,255,255,0.03)" />
+          <div class="small">
+            <strong>Skills</strong>
+            <ul style="padding-left:18px; margin:8px 0 0 0; color: var(--muted)">
+              <li>HTML &amp; CSS</li>
+              <li>JavaScript (DOM, fetch, modules)</li>
+              <li>Basics of Node &amp; Git</li>
+            </ul>
+          </div>
+        </div>
+
+        <div id="contact" class="card" style="margin-top:16px">
+          <h3 style="margin-top:0">Contact</h3>
+          <form id="contactForm">
+            <div style="margin-bottom:8px">
+              <input id="email" type="email" placeholder="your@email.com" required />
+            </div>
+            <div style="margin-bottom:8px">
+              <textarea id="message" placeholder="Message"></textarea>
+            </div>
+            <div style="display:flex; gap:8px; align-items:center">
+              <button type="submit" class="btn">Send</button>
+              <div id="formStatus" class="small" style="margin-left:8px"></div>
+            </div>
+          </form>
+        </div>
+      </aside>
+    </section>
+
+    <footer>
+      Built with ❤️ — edit this file to customize. — © <span id="year"></span> Ahura
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
